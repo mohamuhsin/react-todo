@@ -1,10 +1,13 @@
 import "./App.css";
+
 import AddToDo from "./components/AddToDo/AddToDo";
+import ToDoList from "./components/AddToDo/ToDoList";
 
 function App() {
   return (
     <div>
-      <AddToDo todos={[]} />
+      <AddToDo />
+      <ToDoList todos={[]} />
     </div>
   );
 }

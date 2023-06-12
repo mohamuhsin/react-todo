@@ -12,8 +12,8 @@ const ToDoList = (props) => {
             {todo.num} {todo.title} {todo.description}
           </li>
         ))}
-        ;
       </ul>
     </Card>
   );
 };
+export default ToDoList;
