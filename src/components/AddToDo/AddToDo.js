@@ -42,9 +42,9 @@ const AddToDo = (props) => {
   return (
     <Card className={classes.input}>
       <form onSubmit={AddToDoHandler}>
-        <label htmlFor="number">No.</label>
+        <label htmlFor="number">Num</label>
         <input
-          id="no."
+          id="num"
           type="number"
           value={enteredNum}
           onChange={numChangeHandler}
