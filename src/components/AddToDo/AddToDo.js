@@ -24,7 +24,8 @@ const AddToDo = (props) => {
     setEnteredDes("");
     setEnteredNum("");
     setEnteredTitle("");
-    console.log(enteredNum, enteredTitle, enteredDes);
+
+    props.onAddTodo(enteredNum, enteredTitle, enteredDes);
   };
 
   const numChangeHandler = (event) => {
