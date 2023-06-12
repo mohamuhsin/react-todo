@@ -1,13 +1,14 @@
 import React from "react";
 
 import Card from "../UI/Card";
+import classes from "./AddToDo.module.css";
 
 const AddToDo = (props) => {
   const AddToDoHandler = (event) => {
     event.preventDefault();
   };
   return (
-    <Card>
+    <Card className={classes.input}>
       <form onSubmit={AddToDoHandler}>
         <label htmlFor="number">No.</label>
         <input id="no." type="number" />
