@@ -1,14 +1,17 @@
 import React from "react";
 
-const AddToDo = () => {
+const AddToDo = (props) => {
+  const AddToDoHandler = (event) => {
+    event.preventDefault();
+  };
   return (
-    <form>
+    <form onSubmit={AddToDoHandler}>
       <label htmlFor="number">No.</label>
-      <input type="number" />
+      <input id="no." type="number" />
       <label htmlFor="title">Title</label>
-      <input type="text" />
+      <input id="title" type="text" />
       <label htmlFor="description">Description</label>
-      <input type="text" />
+      <input id="description" type="text" />
       <button type="submit">Add To Do</button>
     </form>
   );
