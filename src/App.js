@@ -14,7 +14,7 @@ function App() {
           num: todoNum,
           title: todoTitle,
           description: todoDesc,
-          id: Math.random.toString(),
+          id: Math.random().toString(),
         },
       ];
     });
