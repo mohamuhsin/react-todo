@@ -4,7 +4,7 @@ import AddToDo from "./components/AddToDo/AddToDo";
 function App() {
   return (
     <div>
-      <AddToDo />
+      <AddToDo todos={[]} />
     </div>
   );
 }
