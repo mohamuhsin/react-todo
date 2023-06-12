@@ -2,6 +2,7 @@ import React from "react";
 
 import Card from "../UI/Card";
 import classes from "./AddToDo.module.css";
+import Button from "../UI/Button";
 
 const AddToDo = (props) => {
   const AddToDoHandler = (event) => {
@@ -16,7 +17,7 @@ const AddToDo = (props) => {
         <input id="title" type="text" />
         <label htmlFor="description">Description</label>
         <input id="description" type="text" />
-        <button type="submit">Add To Do</button>
+        <Button type="submit">Add To Do</Button>
       </form>
     </Card>
   );
