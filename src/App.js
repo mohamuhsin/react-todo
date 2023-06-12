@@ -1,8 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import AddToDo from "./components/AddToDo/AddToDo";
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <AddToDo />
+    </div>
+  );
 }
 
 export default App;
