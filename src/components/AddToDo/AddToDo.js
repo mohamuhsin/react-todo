@@ -10,7 +10,20 @@ const AddToDo = (props) => {
   const [enteredDes, setEnteredDes] = useState("");
 
   const AddToDoHandler = (event) => {
+    if (
+      enteredTitle.trim().length === 0 ||
+      enteredDes.trim().length === 0 ||
+      enteredNum.trim().length === 0
+    ) {
+      return;
+    }
+    if (+enteredNum < 1) {
+      return;
+    }
     event.preventDefault();
+    setEnteredDes("");
+    setEnteredNum("");
+    setEnteredTitle("");
     console.log(enteredNum, enteredTitle, enteredDes);
   };
 
