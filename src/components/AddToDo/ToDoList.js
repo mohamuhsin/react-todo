@@ -8,7 +8,7 @@ const ToDoList = (props) => {
     <Card className={classes.todos}>
       <ul>
         {props.todos.map((todo) => (
-          <li>
+          <li key={todo.id}>
             {todo.num} {todo.title} {todo.description}
           </li>
         ))}

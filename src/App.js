@@ -10,7 +10,12 @@ function App() {
     setTodoList((prevTodo) => {
       return [
         ...prevTodo,
-        { num: todoNum, title: todoTitle, description: todoDesc },
+        {
+          num: todoNum,
+          title: todoTitle,
+          description: todoDesc,
+          id: Math.random.toString(),
+        },
       ];
     });
   };
